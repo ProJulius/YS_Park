@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pink"
+    android:id="@+id/information_map_fragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MapView.InformationMapFragment">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_marginTop="16dp"
+            android:id="@+id/txt_location"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Text"
+            android:padding="10dp"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/montserrat_bold"
+            android:background="@drawable/ic_round_border"/>
+
+        <ImageView
+            android:id="@+id/img_location"
+            android:layout_width="match_parent"
+            android:layout_height="288dp"
+            android:src="@drawable/ys_park_image_01"
+            android:layout_below="@id/txt_location"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+
+        <EditText
+            android:id="@+id/edt_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_location"
+            android:hint="Enter your notes here !!!"
+            android:inputType="textPersonName"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+        <Button
+            android:id="@+id/back_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edt_location"
+            android:text="BACK"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp" />
+
+        <Button
+            android:id="@+id/save_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edt_location"
+            android:text="SAVE"
+            android:layout_marginTop="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"/>
+
+    </RelativeLayout>
+</FrameLayout>

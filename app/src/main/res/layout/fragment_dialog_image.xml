@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="411dp"
+    android:layout_height="309dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FavouriteView.DialogImageFragment">
+
+    <ImageView
+        android:id="@+id/favourite_text"
+        android:layout_width="411dp"
+        android:layout_height="309dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ys_park_text_01"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/favourite_image"
+        android:layout_width="411dp"
+        android:layout_height="309dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ys_park_image_01"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <Button
+        android:id="@+id/flip_btn"
+        android:layout_width="411dp"
+        android:layout_height="309dp"
+        tools:ignore="MissingConstraints"
+        android:background="@drawable/transparent_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

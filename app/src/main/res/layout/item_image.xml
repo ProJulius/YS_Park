@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="10dp">
+
+
+        <TextView
+            android:id="@+id/id_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="1"
+            android:textColor="@color/black"
+            android:fontFamily="@font/montserrat_bold"
+            android:layout_centerVertical="true"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/text_park"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ys_park_text_01"
+            android:layout_marginStart="35dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_park"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ys_park_image_01"
+            android:layout_marginStart="35dp"/>
+
+
+        <TextView
+            android:id="@+id/txt_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_toEndOf="@id/image_park"
+            android:layout_centerVertical="true"
+            android:text="@string/app_name"
+            android:textColor="@color/black"
+            android:fontFamily="@font/noto_serif_bold"
+            android:layout_marginStart="25dp"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
